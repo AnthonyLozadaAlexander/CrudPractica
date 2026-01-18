@@ -4,15 +4,15 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :::p, comp panel1:::::x, space :p:18:p}}"
-			"$verticalGroup": "par l {seq t {space :::p, comp panel1:::::x, space :::p}}"
+			"$horizontalGroup": "par l {seq l {comp Componentes:::p::p, space s:::p, par l {comp scrollPane1:::p:569:p, comp scrollPane2:::::x}, space :0:17:x}}"
+			"$verticalGroup": "par l {comp Componentes::l:::x, seq l {space :::p, comp scrollPane1:::p:319:p, space u:::p, comp scrollPane2:::p:230:p, space ::20:x}}"
 		} ) {
 			name: "this"
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq l {space :p:28:p, par l {comp label1:::p::p, seq l {par t {comp label3:::p::p, comp label4:::p::p, comp label2:::p::p, comp label5::t:p::p}, space :::p, par l {comp textField1:::p:129:p, comp textField2:::p:129:p, comp textField3:::p:129:p, comp textField4::l:p:129:p}}}, space ::615:x}}"
-				"$verticalGroup": "par l {seq l {space :p:80:p, comp label1:::p::p, space ::34:x, par b {comp textField1::b:p::p, comp label2::b:p::p}, space :p:10:p, par b {comp label3::b:p::p, comp textField2::b:p::p}, space :p:12:p, par b {comp textField3::b:p::p, comp label4::b:p::p}, space u:::p, par b {comp textField4::b:p::p, comp label5::b:p::p}, space :p:276:p}}"
+				"$horizontalGroup": "par l {seq l {space :p:25:p, par l {comp label6::l:p::p, comp label1::l:p::p, comp txtID::l:p:129:p, comp txtNombre::l:p:129:p, comp label2::l:p::p, comp label3::l:p::p, comp txtApPaterno::l:p:129:p, comp label4::l:p::p, comp txtApMaterno::l:p:129:p, comp txtEdad:::p:129:p, comp label5:::p::p, seq l {par l:::p {comp button3:::::x, comp button1:::p::p}, space s:::p, par l {comp button2:::p::p, comp button4:::p:113:p}}, comp button5::l:::x}, space ::41:x}}"
+				"$verticalGroup": "par l {seq t {space :p:21:p, comp label1:::p::p, space u:::p, comp label6:::p::p, space u:::p, comp txtID:::p::p, space s:::p, comp label2:::p::p, space :0:0:p, comp txtNombre:::p::p, space s:::p, comp label3:::p::p, space :p:7:p, comp txtApPaterno:::p::p, space s:::p, comp label4:::p::p, space u:::p, comp txtApMaterno:::p::p, space s:::p, comp label5:::p:30:p, space :::p, comp txtEdad:::p::p, space s:::p, par b {comp button1::b:p::p, comp button2::b:p::p}, space u:::p, par l:::p {comp button3:::p::p, seq l {space :p:3:p, comp button4:::p:26:p}}, space :p:15:p, comp button5:::p:39:p, space ::18:x}}"
 			} ) {
-				name: "panel1"
+				name: "Componentes"
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label1"
 					"text": "Datos Usuario"
@@ -25,22 +25,22 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label3"
-					"text": "ApPaterno:"
+					"text": "Apellido Paterno:"
 					"font": #Font0
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label4"
-					"text": "ApMaterno:"
+					"text": "Apellido Materno:"
 					"font": #Font0
 				} )
 				add( new FormComponent( "javax.swing.JTextField" ) {
-					name: "textField1"
+					name: "txtNombre"
 				} )
 				add( new FormComponent( "javax.swing.JTextField" ) {
-					name: "textField2"
+					name: "txtApPaterno"
 				} )
 				add( new FormComponent( "javax.swing.JTextField" ) {
-					name: "textField3"
+					name: "txtApMaterno"
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label5"
@@ -48,7 +48,56 @@ new FormModel {
 					"font": #Font0
 				} )
 				add( new FormComponent( "javax.swing.JTextField" ) {
-					name: "textField4"
+					name: "txtEdad"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "ID:"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtID"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Guardar"
+					"font": &Font1 new java.awt.Font( "CaskaydiaMono NF SemiBold", 1, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Modificar"
+					"font": #Font1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "Editar"
+					"font": #Font1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "Eliminar"
+					"font": #Font1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "Buscar"
+					"font": #Font1
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tbUsuarios"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector )
+						add( new java.util.Vector )
+					}, new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "txtHistorial"
 				} )
 			} )
 		}, new FormLayoutConstraints( null ) {
