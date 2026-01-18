@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "8.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp panel1:::::x, space :p:18:p}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp panel1:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:28:p, par l {comp label1:::p::p, seq l {par t {comp label3:::p::p, comp label4:::p::p, comp label2:::p::p, comp label5::t:p::p}, space :::p, par l {comp textField1:::p:129:p, comp textField2:::p:129:p, comp textField3:::p:129:p, comp textField4::l:p:129:p}}}, space ::615:x}}"
+				"$verticalGroup": "par l {seq l {space :p:80:p, comp label1:::p::p, space ::34:x, par b {comp textField1::b:p::p, comp label2::b:p::p}, space :p:10:p, par b {comp label3::b:p::p, comp textField2::b:p::p}, space :p:12:p, par b {comp textField3::b:p::p, comp label4::b:p::p}, space u:::p, par b {comp textField4::b:p::p, comp label5::b:p::p}, space :p:276:p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Datos Usuario"
+					"font": &Font0 new java.awt.Font( "CaskaydiaMono NF SemiBold", 1, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Nombre:"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "ApPaterno:"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "ApMaterno:"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Edad:"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 100, 15 )
+			"size": new java.awt.Dimension( 720, 500 )
+		} )
+	}
+}
