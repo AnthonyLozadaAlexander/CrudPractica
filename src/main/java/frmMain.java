@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.Font;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
@@ -50,11 +51,14 @@ public class frmMain extends JFrame {
         txtHistorial = new JTextArea();
 
         //======== this ========
+        setBackground(Color.white);
+        setAlwaysOnTop(true);
         setName("this");
         var contentPane = getContentPane();
 
         //======== Componentes ========
         {
+            Componentes.setBackground(Color.white);
             Componentes.setName("Componentes");
 
             //---- label1 ----
@@ -241,6 +245,7 @@ public class frmMain extends JFrame {
         pack();
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
+        txtHistorial.setEditable(false);
     }
 
 
