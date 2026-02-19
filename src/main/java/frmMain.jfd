@@ -8,11 +8,14 @@ new FormModel {
 			"$verticalGroup": "par l {comp Componentes::l:::x, seq l {space :::p, comp scrollPane1:::p:319:p, space u:::p, comp scrollPane2:::p:230:p, space ::20:x}}"
 		} ) {
 			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			"alwaysOnTop": true
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
 				"$horizontalGroup": "par l {seq l {space :p:25:p, par l {comp label6::l:p::p, comp label1::l:p::p, comp txtID::l:p:129:p, comp txtNombre::l:p:129:p, comp label2::l:p::p, comp label3::l:p::p, comp txtApPaterno::l:p:129:p, comp label4::l:p::p, comp txtApMaterno::l:p:129:p, comp txtEdad:::p:129:p, comp label5:::p::p, seq l {par l:::p {comp button3:::::x, comp button1:::p::p}, space s:::p, par l {comp button2:::p::p, comp button4:::p:113:p}}, comp button5::l:::x}, space ::41:x}}"
 				"$verticalGroup": "par l {seq t {space :p:21:p, comp label1:::p::p, space u:::p, comp label6:::p::p, space u:::p, comp txtID:::p::p, space s:::p, comp label2:::p::p, space :0:0:p, comp txtNombre:::p::p, space s:::p, comp label3:::p::p, space :p:7:p, comp txtApPaterno:::p::p, space s:::p, comp label4:::p::p, space u:::p, comp txtApMaterno:::p::p, space s:::p, comp label5:::p:30:p, space :::p, comp txtEdad:::p::p, space s:::p, par b {comp button1::b:p::p, comp button2::b:p::p}, space u:::p, par l:::p {comp button3:::p::p, seq l {space :p:3:p, comp button4:::p:26:p}}, space :p:15:p, comp button5:::p:39:p, space ::18:x}}"
 			} ) {
 				name: "Componentes"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label1"
 					"text": "Datos Usuario"
