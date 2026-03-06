@@ -24,7 +24,7 @@ public class Conexion {
         return con;
     }
 
-    public Connection CloseConecction(){
+    public void CloseConecction(){
         try{
             if(con != null){
                 con.close();
@@ -34,7 +34,5 @@ public class Conexion {
         catch(Exception e){
             JOptionPane.showMessageDialog(null, "Error: Database Failed to Connect" + e.getMessage());
         }
-
-        return con;
     }
 }
